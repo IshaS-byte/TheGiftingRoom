@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: hwb(0 11% 61%);
+}
+
+
+.logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.registration {
+  position: relative;
+  left: 65%;
+  display: flex;
+  align-items: left;
+  margin: 10px;
+  padding: 5px 10px;
+  font-size: 1rem;
+  color: hwb(0 11% 61%);
+  background-color: #ffffff;
+  border-color: #000;
+  border-width: 3px;
+}
+
+.containerNav {
+  background-image: url('./assets/navigationBarImg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.controls {  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+.controls a {
+  color: #000;
+  text-decoration: none;
+}
+
+.controls li{
+  flex: 1;
+  text-align: center;
+  display: block;
+  padding: 20 0;
+  font-size: 2rem;
+  font-weight: bold;
+  font-weight: bold;
+  text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 20px;  margin: 0;
+  white-space: nowrap;
+}
+
+.controls li:hover {
+  background-color: #ffffffca;
+}
+
+.gift-list a{
+  font-size: 0.9rem;
+  display: block;
+  text-align: justify;
+  margin-left: 50px;
+  color: #ffffff;
+}
+
+.gift-list h6, h5{
+  font-size: 1rem;
+  font-weight: bolder;
+  text-align: left;
+  margin-bottom: 5px;
+  break-after: avoid;
+  text-decoration: underline;
+}
+
+.gift-list h5{
+  margin-top: 0;
+}
+
+.gift-list h6 {
+  margin-top: 20px;
+}
+
+.gift-list {
+  display: none;
+  position: absolute;
+  box-shadow: #000;
+  background-color: #000000d8;
+  color: white;
+  width: 700px;
+  padding: 40px;
+  margin-top: 20px;
+  column-count: 3;
+  column-gap: 45px;
+  z-index: 1000;
+}
+
+.home-gift:hover .gift-list{
+  display: block;
+}
